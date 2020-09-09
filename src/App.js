@@ -75,7 +75,7 @@ function App() {
       }
     }
     sortedUser.sort((a, b) => b.public_repos - a.public_repos);
-
+    sortedUser.sort((c,d) => d.public_gists - c.public_gists);
     return sortedUser;
   };
 

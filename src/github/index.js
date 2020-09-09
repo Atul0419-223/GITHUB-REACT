@@ -29,7 +29,7 @@ const GithubForm = ({ onSubmit }) => {
         type="text"
         suffix={suffix}
         value={username}
-        onChange={({ target }) => setUsername(target.value)}
+        onChange={({ target }) => setUsername(target.value.toLowerCase())}
         placeholder="GitHub username"
         required
       />
